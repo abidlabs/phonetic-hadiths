@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "text": "A good word is charity.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 1009"
+  },
+  {
+    "id": 2,
+    "text": "Do not get angry.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 6116"
+  },
+  {
+    "id": 3,
+    "text": "Do not abuse anyone.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 6045"
+  },
+  {
+    "id": 4,
+    "text": "Show mercy and you will be shown mercy.",
+    "narrator": "Abdullah ibn Amr",
+    "book": "Musnad Ahmad 7001"
+  },
+  {
+    "id": 5,
+    "text": "Treat people with good manners.",
+    "narrator": "Abu Dharr",
+    "book": "40 Hadith Nawawi 18"
+  },
+  {
+    "id": 6,
+    "text": "Actions are judged by intentions.",
+    "narrator": "Umar ibn al-Khattab",
+    "book": "Sahih al-Bukhari 1"
+  },
+  {
+    "id": 7,
+    "text": "Say the truth even if it is bitter.",
+    "narrator": "Abu Dharr",
+    "book": "Bulugh al-Maram"
+  },
+  {
+    "id": 8,
+    "text": "Cleanliness is half of faith.",
+    "narrator": "Abu Malik al-Ashari",
+    "book": "Sahih Muslim 223"
+  },
+  {
+    "id": 9,
+    "text": "Modesty is a branch of faith.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 9"
+  },
+  {
+    "id": 10,
+    "text": "Charity does not decrease wealth.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 2588"
+  },
+  {
+    "id": 11,
+    "text": "Spread peace among yourselves.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 54"
+  },
+  {
+    "id": 12,
+    "text": "When you ask, ask Allah.",
+    "narrator": "Abdullah ibn Abbas",
+    "book": "40 Hadith Nawawi 19"
+  },
+  {
+    "id": 13,
+    "text": "When you ask for help, ask it from Allah.",
+    "narrator": "Abdullah ibn Abbas",
+    "book": "40 Hadith Nawawi 19"
+  },
+  {
+    "id": 14,
+    "text": "Fear Allah wherever you are.",
+    "narrator": "Abu Dharr",
+    "book": "40 Hadith Nawawi 18"
+  },
+  {
+    "id": 15,
+    "text": "I was sent to perfect good manners.",
+    "narrator": "Abu Hurairah",
+    "book": "Al-Adab Al-Mufrad 273"
+  },
+  {
+    "id": 16,
+    "text": "Seeking knowledge is a duty upon every Muslim.",
+    "narrator": "Anas ibn Malik",
+    "book": "Sunan Ibn Majah 224"
+  },
+  {
+    "id": 17,
+    "text": "The best of you are those who learn the Quran and teach it.",
+    "narrator": "Uthman ibn Affan",
+    "book": "Sahih al-Bukhari 5027"
+  },
+  {
+    "id": 18,
+    "text": "Your smiling in the face of your brother is charity.",
+    "narrator": "Abu Dharr",
+    "book": "Jami at-Tirmidhi 1956"
+  },
+  {
+    "id": 19,
+    "text": "There is a reward for serving any living being.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 6009"
+  },
+  {
+    "id": 20,
+    "text": "Removing harmful things from the road is charity.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 1009"
+  },
+  {
+    "id": 21,
+    "text": "Follow a bad deed with a good one and it will erase it.",
+    "narrator": "Abu Dharr",
+    "book": "40 Hadith Nawawi 18"
+  },
+  {
+    "id": 22,
+    "text": "There should be neither harm nor the causing of harm.",
+    "narrator": "Abu Said al-Khudri",
+    "book": "40 Hadith Nawawi 32"
+  },
+  {
+    "id": 23,
+    "text": "Whoever covers the faults of a Muslim, Allah will cover his faults.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 2699"
+  },
+  {
+    "id": 24,
+    "text": "Allah helps His servant as long as the servant helps his brother.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 2699"
+  },
+  {
+    "id": 25,
+    "text": "He who shows no mercy will not be shown mercy.",
+    "narrator": "Jarir ibn Abdullah",
+    "book": "Sahih Muslim 2319"
+  },
+  {
+    "id": 26,
+    "text": "None of you truly believes until he loves for his brother what he loves for himself.",
+    "narrator": "Anas ibn Malik",
+    "book": "Sahih al-Bukhari 13"
+  },
+  {
+    "id": 27,
+    "text": "The strong one is not the one who wins in a fight, but the one who controls himself when angry.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 6114"
+  },
+  {
+    "id": 28,
+    "text": "Whoever prays the two cool prayers will go to Paradise.",
+    "narrator": "Abu Musa al-Ashari",
+    "book": "Sahih al-Bukhari 574"
+  },
+  {
+    "id": 29,
+    "text": "When Ramadan begins, the gates of Paradise are opened.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 1899"
+  },
+  {
+    "id": 30,
+    "text": "The real patience is at the first stroke of a hardship.",
+    "narrator": "Anas ibn Malik",
+    "book": "Sahih al-Bukhari 1283"
+  },
+  {
+    "id": 31,
+    "text": "Beautify the Quran with your voices.",
+    "narrator": "Abu Hurairah",
+    "book": "Sunan Ibn Majah 1342"
+  },
+  {
+    "id": 32,
+    "text": "Give the worker his wages before his sweat dries.",
+    "narrator": "Abdullah ibn Umar",
+    "book": "Sunan Ibn Majah 2443"
+  },
+  {
+    "id": 33,
+    "text": "The best of you are those who are best to their families.",
+    "narrator": "Aisha",
+    "book": "Jami at-Tirmidhi 3895"
+  },
+  {
+    "id": 34,
+    "text": "Whoever obeys me will enter Paradise.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 7280"
+  },
+  {
+    "id": 35,
+    "text": "Say I believe in Allah, and then be steadfast.",
+    "narrator": "Sufyan ibn Abdullah",
+    "book": "Sahih Muslim 38"
+  },
+  {
+    "id": 36,
+    "text": "Truthfulness leads to goodness, and goodness leads to Paradise.",
+    "narrator": "Abdullah ibn Masud",
+    "book": "Sahih al-Bukhari 6094"
+  },
+  {
+    "id": 37,
+    "text": "None of you should drink while standing.",
+    "narrator": "Anas ibn Malik",
+    "book": "Sahih Muslim 2024"
+  },
+  {
+    "id": 38,
+    "text": "Eat with your right hand and eat from what is near you.",
+    "narrator": "Umar ibn Abi Salamah",
+    "book": "Sahih al-Bukhari 5376"
+  },
+  {
+    "id": 39,
+    "text": "The Muslim is one from whose tongue and hand others are safe.",
+    "narrator": "Abdullah ibn Amr",
+    "book": "Sahih al-Bukhari 10"
+  },
+  {
+    "id": 40,
+    "text": "Make things easy and do not make them hard.",
+    "narrator": "Anas ibn Malik",
+    "book": "Sahih al-Bukhari 69"
+  },
+  {
+    "id": 41,
+    "text": "Feed the hungry, visit the sick, and free the captive.",
+    "narrator": "Abu Musa al-Ashari",
+    "book": "Sahih al-Bukhari 5649"
+  },
+  {
+    "id": 42,
+    "text": "Be in this world as if you were a stranger or a traveler.",
+    "narrator": "Abdullah ibn Umar",
+    "book": "Sahih al-Bukhari 6416"
+  },
+  {
+    "id": 43,
+    "text": "Leave what makes you doubt for what does not make you doubt.",
+    "narrator": "al-Hasan ibn Ali",
+    "book": "Jami at-Tirmidhi 2518"
+  },
+  {
+    "id": 44,
+    "text": "Part of being a good Muslim is leaving what does not concern him.",
+    "narrator": "Abu Hurairah",
+    "book": "40 Hadith Nawawi 12"
+  },
+  {
+    "id": 45,
+    "text": "The religion is sincere advice.",
+    "narrator": "Tamim al-Dari",
+    "book": "Sahih Muslim 55"
+  },
+  {
+    "id": 46,
+    "text": "If you have no shame, then do as you wish.",
+    "narrator": "Abu Masud",
+    "book": "Sahih al-Bukhari 3484"
+  },
+  {
+    "id": 47,
+    "text": "Paradise lies at the feet of mothers.",
+    "narrator": "Muawiyah ibn Jahimah",
+    "book": "Sunan An-Nasai 3104"
+  },
+  {
+    "id": 48,
+    "text": "The best of you are those with the best manners.",
+    "narrator": "Abdullah ibn Amr",
+    "book": "Sahih al-Bukhari 6035"
+  },
+  {
+    "id": 49,
+    "text": "Every good deed is charity.",
+    "narrator": "Jabir ibn Abdullah",
+    "book": "Sahih al-Bukhari 6021"
+  },
+  {
+    "id": 50,
+    "text": "A kind word is charity.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 6023"
+  },
+  {
+    "id": 51,
+    "text": "Allah is gentle and loves gentleness in all things.",
+    "narrator": "Aisha",
+    "book": "Sahih al-Bukhari 6927"
+  },
+  {
+    "id": 52,
+    "text": "Do not envy one another.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 2563"
+  },
+  {
+    "id": 53,
+    "text": "Do not hate one another.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 2563"
+  },
+  {
+    "id": 54,
+    "text": "Be servants of Allah, as brothers.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 2563"
+  },
+  {
+    "id": 55,
+    "text": "Patience is a light.",
+    "narrator": "Abu Malik al-Ashari",
+    "book": "Sahih Muslim 223"
+  },
+  {
+    "id": 56,
+    "text": "Prayer is a light.",
+    "narrator": "Abu Malik al-Ashari",
+    "book": "Sahih Muslim 223"
+  },
+  {
+    "id": 57,
+    "text": "Charity is a proof.",
+    "narrator": "Abu Malik al-Ashari",
+    "book": "Sahih Muslim 223"
+  },
+  {
+    "id": 58,
+    "text": "The Quran is a proof for you or against you.",
+    "narrator": "Abu Malik al-Ashari",
+    "book": "Sahih Muslim 223"
+  },
+  {
+    "id": 59,
+    "text": "Whoever is not grateful to people is not grateful to Allah.",
+    "narrator": "Abu Hurairah",
+    "book": "Sunan Abu Dawud 4811"
+  },
+  {
+    "id": 60,
+    "text": "Allah loves that when one of you does something, he does it well.",
+    "narrator": "Aisha",
+    "book": "Al-Bayhaqi"
+  },
+  {
+    "id": 61,
+    "text": "Whoever believes in Allah and the Last Day should speak good or remain silent.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 6136"
+  },
+  {
+    "id": 62,
+    "text": "The best of people are those most useful to others.",
+    "narrator": "Jabir ibn Abdullah",
+    "book": "Al-Mu'jam al-Awsat"
+  },
+  {
+    "id": 63,
+    "text": "The most beloved deed to Allah is the most regular one, even if it is small.",
+    "narrator": "Aisha",
+    "book": "Sahih al-Bukhari 6464"
+  },
+  {
+    "id": 64,
+    "text": "The one who guides to good gets the same reward as the one who does it.",
+    "narrator": "Abu Masud al-Ansari",
+    "book": "Sahih Muslim 1893"
+  },
+  {
+    "id": 65,
+    "text": "Do good deeds properly, sincerely, and moderately.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 6464"
+  },
+  {
+    "id": 66,
+    "text": "Eat Suhur, for in Suhur there is a blessing.",
+    "narrator": "Anas ibn Malik",
+    "book": "Sahih al-Bukhari 1923"
+  },
+  {
+    "id": 67,
+    "text": "A Muslim is the brother of a Muslim.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 2564"
+  },
+  {
+    "id": 68,
+    "text": "Whoever forgets a prayer, let him pray it when he remembers it.",
+    "narrator": "Anas ibn Malik",
+    "book": "Sahih al-Bukhari 597"
+  },
+  {
+    "id": 69,
+    "text": "O Allah, bless my nation in their early mornings.",
+    "narrator": "Sakhr al-Ghamidi",
+    "book": "Sunan Abu Dawud 2606"
+  },
+  {
+    "id": 70,
+    "text": "Straighten your rows or Allah will change your faces.",
+    "narrator": "Anas ibn Malik",
+    "book": "Sahih al-Bukhari 717"
+  },
+  {
+    "id": 71,
+    "text": "None of you truly believes until he loves me more than his father, his children, and all people.",
+    "narrator": "Anas ibn Malik",
+    "book": "Sahih al-Bukhari 15"
+  },
+  {
+    "id": 72,
+    "text": "Offer some of your prayers at home.",
+    "narrator": "Abdullah ibn Umar",
+    "book": "Sahih al-Bukhari 1187"
+  },
+  {
+    "id": 73,
+    "text": "The prayer made between the adhan and the iqamah is not rejected.",
+    "narrator": "Anas ibn Malik",
+    "book": "Sunan Abu Dawud 521"
+  },
+  {
+    "id": 74,
+    "text": "Do not turn your backs on one another.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 2563"
+  },
+  {
+    "id": 75,
+    "text": "He is not a believer whose stomach is full while his neighbor goes hungry.",
+    "narrator": "Ibn Abbas",
+    "book": "Al-Adab Al-Mufrad 112"
+  },
+  {
+    "id": 76,
+    "text": "The one who cares for a widow or the poor is like one who fights in the way of Allah.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 5353"
+  },
+  {
+    "id": 77,
+    "text": "If you want to soften your heart, feed the needy and be kind to the orphan.",
+    "narrator": "Abu Hurairah",
+    "book": "Musnad Ahmad 7576"
+  },
+  {
+    "id": 78,
+    "text": "Whoever plants a tree and it bears fruit, it is charity for him.",
+    "narrator": "Anas ibn Malik",
+    "book": "Sahih Muslim 1553"
+  },
+  {
+    "id": 79,
+    "text": "The world is a prison for the believer and a paradise for the one who rejects faith.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 2956"
+  },
+  {
+    "id": 80,
+    "text": "Whoever does not recite Al-Fatiha in his prayer, his prayer is not valid.",
+    "narrator": "Ubadah ibn al-Samit",
+    "book": "Sahih al-Bukhari 756"
+  },
+  {
+    "id": 81,
+    "text": "The earth has been made for me as a place of prayer and a means of cleansing.",
+    "narrator": "Hudhayfah",
+    "book": "Sahih Muslim 522"
+  },
+  {
+    "id": 82,
+    "text": "Whoever is kind, Allah will be kind to him.",
+    "narrator": "Abdullah ibn Amr",
+    "book": "Musnad Ahmad"
+  },
+  {
+    "id": 83,
+    "text": "The best of homes is a home in which an orphan is well treated.",
+    "narrator": "Abu Hurairah",
+    "book": "Sunan Ibn Majah 3679"
+  },
+  {
+    "id": 84,
+    "text": "Tie your camel and then trust in Allah.",
+    "narrator": "Anas ibn Malik",
+    "book": "Jami at-Tirmidhi 2517"
+  },
+  {
+    "id": 85,
+    "text": "Do not take back your charity.",
+    "narrator": "Abdullah ibn Umar",
+    "book": "Sahih al-Bukhari 2623"
+  },
+  {
+    "id": 86,
+    "text": "Whoever guards his tongue and his hands, I will guarantee him Paradise.",
+    "narrator": "Sahl ibn Saad",
+    "book": "Sahih al-Bukhari 6474"
+  },
+  {
+    "id": 87,
+    "text": "The one who eats and is grateful is like the one who fasts and is patient.",
+    "narrator": "Abu Hurairah",
+    "book": "Sunan Ibn Majah 1764"
+  },
+  {
+    "id": 88,
+    "text": "Allah does not look at your bodies or faces, but He looks at your hearts.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 2564"
+  },
+  {
+    "id": 89,
+    "text": "The best among you are those who are best in paying off debts.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 2305"
+  },
+  {
+    "id": 90,
+    "text": "Give glad tidings and do not drive people away.",
+    "narrator": "Abu Musa",
+    "book": "Sahih Muslim 1734"
+  },
+  {
+    "id": 91,
+    "text": "The best days on which the sun rises is Friday.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 854"
+  },
+  {
+    "id": 92,
+    "text": "Whoever helps someone in hardship, Allah will make things easy for him.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 2699"
+  },
+  {
+    "id": 93,
+    "text": "The best prayer after the required ones is the night prayer.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 1163"
+  },
+  {
+    "id": 94,
+    "text": "A charity given in secret puts out the anger of the Lord.",
+    "narrator": "Abu Hurairah",
+    "book": "Jami at-Tirmidhi 664"
+  },
+  {
+    "id": 95,
+    "text": "Whoever reads a letter from the Book of Allah will get a good deed.",
+    "narrator": "Abdullah ibn Masud",
+    "book": "Jami at-Tirmidhi 2910"
+  },
+  {
+    "id": 96,
+    "text": "The signs of a hypocrite are three: he lies when he speaks, he breaks his promises, and he betrays trust.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 6095"
+  },
+  {
+    "id": 97,
+    "text": "Your mother, then your mother, then your mother, then your father.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih Muslim 2548"
+  },
+  {
+    "id": 98,
+    "text": "The best remembrance is: There is no god but Allah.",
+    "narrator": "Jabir ibn Abdullah",
+    "book": "Jami at-Tirmidhi 3383"
+  },
+  {
+    "id": 99,
+    "text": "Whoever believes in Allah and the Last Day, let him be kind to his neighbor.",
+    "narrator": "Abu Hurairah",
+    "book": "Sahih al-Bukhari 6018"
+  },
+  {
+    "id": 100,
+    "text": "The best of charity is giving water to drink.",
+    "narrator": "Saad ibn Ubadah",
+    "book": "Sunan Abu Dawud 1681"
+  }
+]

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30 Prophetic Hadiths</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #b8860b;
+    --gold-light: #d4a843;
+    --gold-pale: #f5e6c8;
+    --ink: #2c1810;
+    --ink-light: #5a3a28;
+    --parchment: #faf6ef;
+    --parchment-dark: #f0e8d8;
+    --cream: #fffdf8;
+    --border-ornament: #c9a96e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    background: var(--parchment);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  /* ── Screen-only UI ── */
+  .screen-ui {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 100;
+    background: rgba(44, 24, 16, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 0.6rem 1.5rem;
+    border-radius: 999px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  }
+
+  .screen-ui button {
+    background: none;
+    border: none;
+    color: var(--gold-pale);
+    font-family: inherit;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 0.3rem 0.7rem;
+    border-radius: 50%;
+    transition: all 0.2s;
+    line-height: 1;
+  }
+  .screen-ui button:hover { background: rgba(184,134,11,0.25); color: #fff; }
+  .screen-ui button:disabled { opacity: 0.3; cursor: default; }
+  .screen-ui button:disabled:hover { background: none; color: var(--gold-pale); }
+
+  .page-indicator {
+    color: var(--gold-light);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    min-width: 5rem;
+    text-align: center;
+    user-select: none;
+  }
+
+  .btn-print {
+    background: var(--gold) !important;
+    color: var(--cream) !important;
+    border-radius: 999px !important;
+    padding: 0.4rem 1.2rem !important;
+    font-size: 0.85rem !important;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+    transition: all 0.2s;
+  }
+  .btn-print:hover { background: var(--gold-light) !important; }
+
+  /* ── Page wrapper (screen view) ── */
+  .book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem 7rem;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 600px;
+    min-height: 80vh;
+    background: var(--cream);
+    border: 1px solid var(--border-ornament);
+    border-radius: 4px;
+    box-shadow:
+      0 1px 3px rgba(0,0,0,0.06),
+      0 8px 40px rgba(0,0,0,0.08),
+      inset 0 0 80px rgba(184,134,11,0.03);
+    display: none;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  .page.active { display: flex; }
+
+  /* ── Corner ornaments ── */
+  .page::before,
+  .page::after {
+    content: '✦';
+    position: absolute;
+    font-size: 1.1rem;
+    color: var(--gold);
+    opacity: 0.5;
+  }
+  .page::before { top: 1.2rem; left: 1.4rem; }
+  .page::after { bottom: 1.2rem; right: 1.4rem; }
+
+  .corner-bl, .corner-tr {
+    position: absolute;
+    font-size: 1.1rem;
+    color: var(--gold);
+    opacity: 0.5;
+  }
+  .corner-tr { top: 1.2rem; right: 1.4rem; }
+  .corner-bl { bottom: 1.2rem; left: 1.4rem; }
+
+  /* ── Ornamental border inside page ── */
+  .page-inner-border {
+    position: absolute;
+    inset: 0.8rem;
+    border: 1px solid var(--border-ornament);
+    border-radius: 2px;
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  /* ── Title page ── */
+  .title-page {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2.5rem;
+  }
+
+  .title-ornament {
+    font-size: 1.6rem;
+    color: var(--gold);
+    letter-spacing: 0.6em;
+    margin-bottom: 1.5rem;
+    opacity: 0.7;
+  }
+
+  .title-main {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.02em;
+  }
+
+  .title-numeral {
+    font-size: 5rem;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.2rem;
+  }
+
+  .title-sub {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--ink-light);
+    font-style: italic;
+    margin-bottom: 2rem;
+    letter-spacing: 0.04em;
+  }
+
+  .title-divider {
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 0 auto 2rem;
+  }
+
+  .title-desc {
+    font-size: 1.05rem;
+    color: var(--ink-light);
+    line-height: 1.7;
+    max-width: 380px;
+    font-weight: 400;
+  }
+
+  .title-bismillah {
+    font-family: 'Noto Naskh Arabic', serif;
+    font-size: 1.8rem;
+    color: var(--gold);
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+
+  .title-ornament-bottom {
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--gold);
+    opacity: 0.5;
+    letter-spacing: 0.4em;
+  }
+
+  /* ── Hadith page ── */
+  .hadith-page {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3.5rem 3rem;
+  }
+
+  .hadith-number {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .hadith-narrator {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--ink-light);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.4rem;
+    font-style: italic;
+  }
+
+  .hadith-narrator-label {
+    font-size: 0.7rem;
+    color: var(--border-ornament);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 2rem;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .hadith-divider-top, .hadith-divider-bottom {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 0 auto;
+  }
+  .hadith-divider-top { margin-bottom: 2.5rem; }
+  .hadith-divider-bottom { margin-top: 2.5rem; }
+
+  .hadith-text {
+    font-size: 1.65rem;
+    font-weight: 500;
+    line-height: 1.65;
+    color: var(--ink);
+    max-width: 460px;
+    margin: 0 auto;
+    letter-spacing: 0.01em;
+  }
+
+  .hadith-text::before { content: '\201C'; color: var(--gold); }
+  .hadith-text::after { content: '\201D'; color: var(--gold); }
+
+  .hadith-source {
+    font-size: 0.8rem;
+    color: var(--ink-light);
+    letter-spacing: 0.08em;
+    margin-top: 2rem;
+    font-style: italic;
+    opacity: 0.8;
+  }
+
+  /* ── End page ── */
+  .end-page {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2.5rem;
+  }
+
+  .end-page .title-ornament { margin-bottom: 2rem; }
+
+  .end-message {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--ink-light);
+    line-height: 1.7;
+    max-width: 380px;
+  }
+
+  .end-dua {
+    font-family: 'Noto Naskh Arabic', serif;
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-top: 2rem;
+  }
+
+  /* ── Keyboard hint ── */
+  .keyboard-hint {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 0.75rem;
+    color: var(--border-ornament);
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+  }
+
+  /* ────────────────────────────────────
+     PRINT / PDF STYLES
+  ──────────────────────────────────── */
+  @media print {
+    @page {
+      size: 5.5in 8.5in;
+      margin: 0;
+    }
+
+    body {
+      background: #fff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .screen-ui, .keyboard-hint { display: none !important; }
+
+    .book-container {
+      padding: 0;
+      display: block;
+    }
+
+    .page {
+      display: flex !important;
+      width: 5.5in;
+      height: 8.5in;
+      max-width: none;
+      min-height: auto;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      page-break-after: always;
+      page-break-inside: avoid;
+      background: #fff;
+    }
+
+    .page:last-child { page-break-after: auto; }
+
+    .page-inner-border { opacity: 0.25; }
+
+    .hadith-text { font-size: 1.45rem; }
+
+    .title-numeral { font-size: 4rem; }
+    .title-main { font-size: 2.2rem; }
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 640px) {
+    .page { min-height: 85vh; }
+    .hadith-text { font-size: 1.35rem; }
+    .title-main { font-size: 2rem; }
+    .title-numeral { font-size: 3.5rem; }
+    .hadith-page { padding: 2.5rem 2rem; }
+    .keyboard-hint { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="keyboard-hint">← → arrow keys to navigate</div>
+
+<div class="book-container" id="book"></div>
+
+<div class="screen-ui">
+  <button id="prevBtn" aria-label="Previous page" disabled>◂</button>
+  <span class="page-indicator" id="pageIndicator">Title</span>
+  <button id="nextBtn" aria-label="Next page">▸</button>
+  <button class="btn-print" id="printBtn" aria-label="Print book">Print Book</button>
+</div>
+
+<script>
+const book = document.getElementById('book');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const pageIndicator = document.getElementById('pageIndicator');
+const printBtn = document.getElementById('printBtn');
+
+let currentPage = 0;
+let totalPages = 0;
+
+function createTitlePage() {
+  const div = document.createElement('div');
+  div.className = 'page title-page active';
+  div.innerHTML = `
+    <div class="page-inner-border"></div>
+    <span class="corner-tr">✦</span>
+    <span class="corner-bl">✦</span>
+    <div class="title-bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</div>
+    <div class="title-ornament">❧ ✦ ❧</div>
+    <div class="title-numeral">30</div>
+    <div class="title-main">Prophetic Hadiths</div>
+    <div class="title-sub">for Young Readers</div>
+    <div class="title-divider"></div>
+    <div class="title-desc">
+      A collection of short and simple sayings of the
+      Prophet Muhammad ﷺ, chosen for children
+      learning to read.
+    </div>
+    <div class="title-ornament-bottom">✦ ✦ ✦</div>
+  `;
+  return div;
+}
+
+function createHadithPage(h) {
+  const div = document.createElement('div');
+  div.className = 'page hadith-page';
+  div.innerHTML = `
+    <div class="page-inner-border"></div>
+    <span class="corner-tr">✦</span>
+    <span class="corner-bl">✦</span>
+    <div class="hadith-number">Hadith ${h.id}</div>
+    <div class="hadith-narrator">${h.narrator}</div>
+    <div class="hadith-narrator-label">Narrated by</div>
+    <div class="hadith-divider-top"></div>
+    <div class="hadith-text">${h.text}</div>
+    <div class="hadith-divider-bottom"></div>
+    <div class="hadith-source">${h.book}</div>
+  `;
+  return div;
+}
+
+function createEndPage() {
+  const div = document.createElement('div');
+  div.className = 'page end-page';
+  div.innerHTML = `
+    <div class="page-inner-border"></div>
+    <span class="corner-tr">✦</span>
+    <span class="corner-bl">✦</span>
+    <div class="title-ornament">❧ ✦ ❧</div>
+    <div class="title-divider"></div>
+    <div class="end-message">
+      May these words of the Prophet ﷺ
+      be a light upon your path and
+      a seed of goodness in your heart.
+    </div>
+    <div class="title-divider" style="margin-top:2rem"></div>
+    <div class="end-dua">جزاكم الله خيراً</div>
+    <div class="title-ornament-bottom">✦ ✦ ✦</div>
+  `;
+  return div;
+}
+
+function goTo(index) {
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(p => p.classList.remove('active'));
+  currentPage = Math.max(0, Math.min(index, totalPages - 1));
+  pages[currentPage].classList.add('active');
+
+  prevBtn.disabled = currentPage === 0;
+  nextBtn.disabled = currentPage === totalPages - 1;
+
+  if (currentPage === 0) pageIndicator.textContent = 'Title';
+  else if (currentPage === totalPages - 1) pageIndicator.textContent = 'End';
+  else pageIndicator.textContent = `${currentPage} of ${totalPages - 2}`;
+
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+document.addEventListener('touchend', e => {
+  touchEndX = e.changedTouches[0].screenX;
+  const diff = touchStartX - touchEndX;
+  if (Math.abs(diff) > 60) {
+    if (diff > 0) goTo(currentPage + 1);
+    else goTo(currentPage - 1);
+  }
+}, { passive: true });
+
+prevBtn.addEventListener('click', () => goTo(currentPage - 1));
+nextBtn.addEventListener('click', () => goTo(currentPage + 1));
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') goTo(currentPage + 1);
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') goTo(currentPage - 1);
+});
+
+printBtn.addEventListener('click', () => window.print());
+
+fetch('hadiths.json')
+  .then(r => r.json())
+  .then(hadiths => {
+    book.appendChild(createTitlePage());
+    hadiths.forEach(h => book.appendChild(createHadithPage(h)));
+    book.appendChild(createEndPage());
+    totalPages = hadiths.length + 2;
+    goTo(0);
+  });
+</script>
+</body>
+</html>
